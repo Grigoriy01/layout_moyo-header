@@ -53,6 +53,17 @@ body {
   height: 100%;
 }
 
+.is-active::after {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  content: "";
+  background-color: var(--color-text-menu);
+  width: 37px;
+  height: 4px;
+  border-radius: 8px;
+}
+
 
 
 .nav-list__link {
@@ -64,16 +75,15 @@ body {
   padding-bottom: 1.5px;
 }
 
+.nav-list__link:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--color-text-menu);
+  text-decoration-thickness: 2px;
+}
+
+
 .nav-list :nth-child(4) > a,
 .nav-list :nth-child(1) > a {
   color: var(--color-text-menu);
 }
 
-.nav-bar-underLine {
-  position: absolute;
-  bottom: 0;
-  width: 37px;
-  height: 4px;
-  background-color: var(--color-text-menu);
-  border-radius: 8px;
-}
