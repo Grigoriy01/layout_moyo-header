@@ -25,13 +25,13 @@ body {
 
 
 
-.nav-bar {
+.nav__bar {
   margin-right: 50px;
   height: 60px;
   align-self: stretch;
 }
 
-.nav-list {
+.nav__list {
   display: flex;
   height: 100%;
   padding: 0;
@@ -39,7 +39,7 @@ body {
   margin-bottom: 0;
 }
 
-.nav-list__item {
+.nav__list__item {
   display: flex;
   align-items: center;
   list-style: none;
@@ -47,7 +47,7 @@ body {
 
 }
 
-.nav-list__item:first-child {
+.nav__list__item:first-child {
   position: relative;
   margin-left: 0;
   height: 100%;
@@ -66,7 +66,7 @@ body {
 
 
 
-.nav-list__link {
+.nav__list__link {
   text-decoration: none;
   font-size: 12px;
   color: #000;
@@ -75,15 +75,15 @@ body {
   padding-bottom: 1.5px;
 }
 
-.nav-list__link:hover {
+.nav__list__link:hover {
   text-decoration: underline;
   text-decoration-color: var(--color-text-menu);
   text-decoration-thickness: 2px;
 }
 
 
-.nav-list :nth-child(4) > a,
-.nav-list :nth-child(1) > a {
+.nav__list :nth-child(4) > a,
+.nav__list :nth-child(1) > a {
   color: var(--color-text-menu);
 }
 
