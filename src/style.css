@@ -17,11 +17,18 @@ body {
   height: 60px;
 }
 
-.logo {
+.logo img {
   display: block;
-  margin: 50px;
-  width: 40px;
-  height: 40px;
+}
+
+a.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  padding: 0;
+  line-height: normal;
+  margin-left: 50px;
 }
 
 .nav__bar {
@@ -42,8 +49,15 @@ body {
 }
 
 .nav__list__item:first-child {
-  position: relative;
   margin-left: 0;
+}
+
+.nav__list__item:last-child {
+  margin-right: 0;
+}
+
+.is-active {
+  position: relative;
 }
 
 .is-active::after {
@@ -66,12 +80,13 @@ body {
   font-size: 12px;
   color: #000;
   padding: 0;
+  text-transform: uppercase;
 }
 
 .nav__list__link:hover {
   color: var(--color-text-menu);
 }
 
-.nav__list :first-child > a {
+.nav__list__link.is-active {
   color: var(--color-text-menu);
 }
